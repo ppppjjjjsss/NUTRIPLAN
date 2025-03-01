@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv"X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlan</title>
+    <!-- Link To CSS -->
+     <link rel="stylesheet" href="Meals.style.css">
+     <!-- Box Icons -->
+     <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Link Swiper's CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="img/title.png" alt="">
+        </div>
+        <!-- Menu Icon -->
+        
+        <!-- Nav List -->
+        <ul class="navbar">
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/home.html">Home</a></li>
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/home.html#categories">Categories</a></li>
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/home.html#about">About</a></li>
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/home.html#customers">Customers</a></li>
+            <li><a href="C:\Users\PRINCESS\OneDrive\signup.login\home\Meals\Meals.html" class="home-active">Meals</a></li>
+            <li><a href="C:\Users\PRINCESS\OneDrive\signup.login\home\Meals\Price-List\Price-List.html">Price-List</a></li>
+        </ul>
+        <!-- Profile -->
+        <div class="profile">
+            <img src="img/profile.jpg" alt=""> 
+            <span>Abdus Rahman</span>
+            <i class='bx bx-caret-down' ></i>
+        </div>
+    </header>
+
+      <div id="sidebar" class="sidebar">
+          <h2>Grocery List</h2>
+          <button class='bx bx-printer' name='printer' id="print-btn" aria-label="Print"></button>
+          <button id="confirm-delivery-btn" class='bx bx-cart-alt' aria-label="Confirm Delivery"></button>
+          <div class="favorites">
+              <ul id="favorites-list"></ul>
+              <h3>Select Ingredients for Delivery</h3>
+              <ul id="delivery-list"></ul>  
+          </div>     
+      </div>
+      
+      <div id="main-content" class="main-content">
+          <button id="toggle-btn" class="toggle-btn" aria-label="Toggle Sidebar">
+              <img src="img/right-arrow.png" class="toggle-arrow" alt="Toggle Arrow">
+          </button>
+      </div>
+    
+      
+      <div class="budget-container">
+          <section class="container-search">
+              <input type="text" id="keyword" placeholder="Search Dishes..." />
+  
+              <div class="item">
+                  <label for="minBudget">Min Budget:</label>
+                  <input type="number" id="minBudget" min="0" value="0" />
+                  <span id="minBudgetValue">₱0</span>
+              </div>
+  
+              <div class="item">
+                  <label for="maxBudget">Max Budget:</label>
+                  <input type="number" id="maxBudget" min="0" value="100" />
+                  <span id="maxBudgetValue">₱100</span>
+              </div>
+              <button class="kkbutton" id="searchButton">Search</button>
+          </section>
+      </div>
+
+      <!-- Products -->
+      <section class="products" id="products">
+          <div class="heading">
+          <div class="products-container">
+
+            <section>
+                <div id="results" class="products-container" class="products" id="products" ></div>
+            </section>
+        
+          <!--BOX 1-->
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["1 lb porkbelly","2 cucumbers","2 tomatoes (optional)","1 red onion","3 pieces chili pepper"]'>  
+                    <a href="Recipes1Pork/Recipes1.html">
+                        <img src="img/Pork Kilawin.jpg" alt="">
+                        <h2>Pork Kilawin</h2>
+                        <h3 class="price">₱150.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+           <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["1 ½ lbs. chicken", "1 ½ lbs. pork belly", "1 ¼ cup white vinegar","2 tablespoons fish sauce", "2 heads garlic","¼ cup soy sauce","3 pieces bay leaves","1 ½ teaspoons peppercorn", "4 tablespoons cooking oil"]'>
+                <a href="Recipes2Pork/Recipes2.html">
+                        <img src="img/CPA (Chicken and Pork Adobo).jpg" alt="">
+                        <h2>CPA (Chicken and Pork Adobo)</h2>
+                        <h3 class="price">₱10.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["1 lb. pork loin","½ lb. pork spleen/ pali","½ lb. pork liver", "½ lb. pork blood", "2 ounces misua","3 ounces hot pepper leaves","1 onion","5 cloves garlic", "3 thumbs ginger julienned","4 grams Maggi Magic Sarap","6 cups water","3 tablespoons cooking oil"]'>  
+                <a href="Recipes3Pork/Recipes3.html">
+                        <img src="img/Batchoy Tagalog.jpg" alt="">
+                        <h2>Batchoy Tagalog</h2>
+                        <h3 class="price">₱10.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["3 lbs. pork belly", "1 Knorr Pork cube", "25 quail eggs", "3 onions", "½ lime","1 head garlic", "3 tablespoons soy sauce", "2 tablespoons oyster sauce", "2 tablespoons Worcestershire sauce", "1 tablespoon brown sugar", "4 cups water", "4 tablespoons cooking oil","Ground black pepper"]'>  
+                <a href="Recipes4Pork/Recipes4.html">
+                        <img src="img/Pork Belly with Boiled Eggs in Oyster Sauce.jpg" alt="">
+                        <h2>Pork Belly with Boiled Eggs in Oyster Sauce</h2>
+                        <h3 class="price">₱10.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["4 lbs. pork chop", "1 piece Knorr Pork Cube", "½ cup soy sauce","1 piece lemon", "4 pieces yellow onions", "10 cloves garlic","1 teaspoon cornstarch", "2 cups water", "3 tablespoons cooking oil","Ground black pepper to taste"]'>  
+                <a href="Recipes5Pork/Recipes5.html">
+                        <img src="img/Pork Chop Steak.jpg" alt="">
+                        <h2>Pork Chop Steak</h2>
+                        <h3 class="price">₱10.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["1.5 lbs beef shank", "3 oz mi trung dried egg noodles", "carrots", "Savoy cabbage", "3 hard boiled eggs", "garlic", "4 star anise", "1 medium onion", "4 cups beef broth", "water", "Salt", "Pepper","cooking oil"]'>
+                <a href="Recipes1Beef/Recipes1.html">
+                        <img src="img/Bulalo Beef Mami.png" alt="">
+                        <h2>Bulalo Beef Mami</h2>
+                        <h3 class="price">₱10.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["1 can corned beef","1 medium yellow onion","3 cloves garlic","3 cups sinangag (garlic fried rice)","3 eggs","cooking oil","beef broth","Salt","pepper"]'>
+                <a href="Recipes2Beef/Recipes2.html">
+                        <img src="img/Corned Beef Silog.png" alt="">
+                        <h2>Corned Beef Silog</h2>
+                        <h3 class="price">₱77.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["1 ½ lbs beef tenderloin", "salt", "head garlic", "butter", "olive oil", "ground black pepper", "Worcestershire sauce", "oyster sauce"]'>  
+                <a href="Recipes3Beef/Recipes3.html">
+                        <img src="img/Beef Salpicao.png" alt="">
+                        <h2>Beef Salpicao</h2>
+                        <h3 class="price">₱90.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["1 lb. beef top sirloin","garlic","1 yellow onion","3 stems green onion","½ head cabbage", "2 carrots","1 red bell pepper","2 cups snap peas","soy sauce","cooking oil","½ cup beef stock","Maggi Magic Sarap","soy sauce","oyster sauce","baking soda","cornstarch","ground black pepper"]'>  
+                <a href="Recipes4Beef/Recipes4.html">
+                        <img src="img/Beef Chop Suey.jpg" alt="">
+                        <h2>Beef Chop Suey</h2>
+                        <h3 class="price">₱50.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["2 lbs beef", "3 medium carrots", "1 ½ cups celery ribs", "3 medium potatoes", " paprika", "ground cloves", "cornstarch", "water", "1 garlic", "1 medium onion", "2 cups beef broth", "salt", "cooking oil"]'>  
+                <a href="Recipes5Beef/Recipes5.html">
+                        <img src="img/Beef Stew.png" alt="">
+                        <h2>Beef Stew</h2>
+                        <h3 class="price">₱70.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+               <div class="dish" data-ingredients='["2 lbs chicken","1 Knorr Chicken Cube","2 carrots","2 potato","tomato sauce","2 bell pepper","liver spread","1 tomato","3 chili pepper","1 piece onion","3 cloves garlic","cheddar cheese","water","cooking oil"]'>
+                <a href="Recipes1Chicken/Recipes1.html">
+                        <img src="img/Chicken Caldereta.png" alt="">
+                        <h2>Chicken Caldereta</h2>
+                        <h3 class="price">₱70.00</h3>
+                    </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+          </div> 
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='[ "3 lbs. chicken","2 green papaya","malunggay leaves","hot pepper leaves","5 cloves garlic","1 onion","3 thumbs ginger","2 Magi Magic Chicken Cubes","rice wash","water","fish sauce","Ground black pepper (optional)","cooking oil"]'>
+                  <a href="Recipes2Chicken/Recipes2.html">
+                    <img src="img/Chicken Tinola.png" alt="">
+                    <h2>Chicken Tinola</h2>
+                    <h3 class="price">₱77.00</h3>   
+                  </a>                     
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+         </div>    
+         <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["2 lbs chicken","ginger","garlic","lemongrass","coconut vinegar","cup lemon or calamansi juice","salt","brown sugar","lemon soda (soft drink)","ground black pepper","annatto oil/atsuete oil (for basting sauce)","½ cup margarine (for basting sauce)","salt(for basting sauce)","lemon or calamansi juice (for basting sauce)"]'>  
+                  <a href="Recipes3Chicken/Recipes3.html">
+                  <img src="img/Chicken Inasal.png" alt="">
+                    <h2>Chicken Inasal</h2>
+                    <h3 class="price">₱90.00</h3>
+                  </a>
+                    <button class="favorite-btn" id="favorite-btn">
+                        <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="dishes">
+              <div class="dish" data-ingredients='[ "2 lbs chicken","dried bay leaves","soy sauce","white vinegar","5 cloves garlic","water", "cooking oil", "sugar","salt", "whole peppercorn"]'>  
+                <a href="Recipes4Chicken/Recipes4.html">
+                <img src="img/Chicken Adobo.png" alt="">
+                  <h2>Chicken Adobo</h2>
+                  <h3 class="price">₱50.00</h3>
+                </a>
+                  <button class="favorite-btn" id="favorite-btn">
+                      <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="dishes">
+              <div class="dish" data-ingredients='["cooked white rice", "2 eggs", "6 ounces boneless breast", "1 ½ Cups frozen mixed vegetables (carrots, green peas, and corn)", "1 onion", "2 cloves garlic","cooking oil", "Salt","ground black pepper", "oyster sauce (for sauce)",  "soy sauce (for sauce)", "sesame oil (for sauce)"]'>  
+                <a href="Recipes5Chicken/Recipes5.html">
+                <img src="img/Chicken Fried Rice.png" alt="">
+                  <h2>Chicken Fried Rice</h2>
+                  <h3 class="price">₱70.00</h3>
+                </a>
+                  <button class="favorite-btn" id="favorite-btn">
+                       <i class='bx bx-heart' id="favorite-icon"></i> 
+                    </button>
+                </div>
+            </div>
+         </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["2 lbs fish","40 g Knorr Sinigang sa Sampaloc Mix Original","2 pieces tomato ","1 cup Daikon radish","1 piece onion","3 cups spinach","10 pieces okra","2 eggplant","2 long green pepper","2 quarts water","2 cooking oil","1 ½ tablespoons salt","Fish sauce and ground black pepper to taste"]'>                  
+                    <a href="Recipes1Fish/Recipes1.html">
+                    <img src="img/Fish Sinigang.png" alt="">
+                       <h2>Fish Sinigang</h2>
+                       <h3 class="price">₱150.00</h3>
+                    </a>
+                      <button class="favorite-btn" id="favorite-btn">
+                          <i class='bx bx-heart' id="favorite-icon"></i> 
+                      </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["4 oz. Salmon fillet","1 medium Chayote","1 medium onion","2 pieces Finger chili","2 cups Malunggay leaves","1 tablespoon ginger","2 tablespoons fish sauce","4 cups water","½ teaspoon ground black pepper","2 tablespoons extra-virgin olive oil"]'>
+                    <a href="Recipes2Fish/Recipes2.html">
+                    <img src="img/Fish Tinola.png" alt="">
+                        <h2>Fish Tinola</h2>
+                        <h3 class="price">₱70.00</h3>
+                    </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["5 oz sardines, canned with tomato sauce","2 ounces misua, thin flour noodles","2 tablespoons fish sauce","¼ teaspoon ground black pepper","2 cloves garlic, minced","1 onion, minced","1 ½ cups water","1 tablespoon toasted garlic","1 teaspoon scallion, chopped","2 tablespoons cooking oil"]'>  
+                    <a href="Recipes3Fish/Recipes3.html">
+                    <img src="img/Sardines With Misua.png" alt="">
+                        <h2>Sardines with Misua<br> </h2>
+                        <h3 class="price">₱50.00</h3>
+                  </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='[ "1 large fish (1 to 2 lbs)", "1 medium red bell pepper", "1 medium red onion", "1 cup white vinegar", "5 cloves garlic", "whole peppercorn", "salt", "sugar", "cooking oil"]'>  
+                    <a href="Recipes4Fish/Recipes4.html">
+                    <img src="img/Fish Escabeche.png" alt="">
+                        <h2>Fish Escabeche</h2>
+                        <h3 class="price">₱50.00</h3>
+                    </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["1 lb. fish fillet","5 tablespoons tapioca starch","3 pieces ice cubes","¼ cup minced scallions","½ cup chopped scallions","1 medium yellow onion, sliced","1 bunch baby bok choy","6 cups vegetable broth","1 teaspoon salt","½ teaspoon ground black pepper","1 tablespoon fish sauce"]'>  
+                    <a href="Recipes5Fish/Recipes5.html">
+                    <img src="img/Fish Ball Soup.png" alt="">
+                        <h2>Fish Ball Soup</h2>
+                        <h3 class="price">₱70.00</h3>
+                    </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["1 eggplant","10 okra", "2 thumbs ginger", "1 tomato", "5 stalks green onions", "1 ½ cups spinach or alugbati", "1 ½ cup squash", "1 cup malunggay leaves", "2 long green pepper","2 slices fish fillet (baked or fried)", "1 to 2 cups string beans", "1 cup loofah (patola)", "Salt", "2 cups water"]'>
+                    <a href="Recipes1Vegetables/Recipes1.html">
+                    <img src="img/Utan Bisaya.png" alt="Chicharon Bulaklak">
+                        <h2>Utan Bisaya</h2>
+                        <h3 class="price">₱150.00</h3>
+                    </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["8 ounces kalabasa (Calabaza squash)","1 carrots", "3/4 cup malunggay (moringa) leaves","cooking oil",  "cornstarch", "all-purpose flour", "4 grams Maggi Magic Sarap (or any seasoning)","1 egg","water","½  onion(for dipping sauce)","2  green onion(for dipping sauce)","white vinegar (for dipping sauce)"]'>
+                    <a href="Recipes2Vegetables/Recipes2.html">
+                    <img src="img/Vegetable Okoy.png" alt="">
+                        <h2>Vegetable Okoy</h2>
+                        <h3 class="price">₱77.00</h3>   
+                    </a>                     
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["cabbage", "3/4 cup carrots", "3 cups bean sprouts", "2 green onions", "2 garlic", "1 ginger", "sesame oil", "soy sauce", "ground black pepper", "Spring roll wrappers", "1 egg", "cooking oil"]'>  
+                    <a href="Recipes3Vegetables/Recipes3.html">
+                    <img src="img/Vegetable spring roll.png" alt="">
+                        <h2>Vegetable Spring roll</h2>
+                        <h3 class="price">₱90.00</h3>
+                    </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["1 1/2 lbs. squash","18 string beans (sitaw)","1 Knorr Pork ","3 ounces pork (optional)","coconut milk","1  onion","2 thumbs ginger","5 cloves garlic","ground black pepper","cooking oil", "Fish sauce"]'>  
+                    <a href="Recipes4Vegetables/Recipes4.html">
+                    <img src="img/Ginataang Kalabasa at sitaw.png" alt="">
+                        <h2>Ginataang Kalabasa at Sitaw</h2>
+                        <h3 class="price">₱50.00</h3>
+                    </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="dishes">
+                <div class="dish" data-ingredients='["1 lb lechon kawali","1 Knorr Shrimp","12 sitaw","1/2 kalabasa","12 okra","1 Chinese eggplant","1 ampalaya","1 kamote(optional)","2 tomato","2 thumbs ginger (optional)","1 onion","4 cloves garlic","2 bagoong alamang","water","3 cooking oil","ground black pepper"]'>  
+                          <a href="Recipes5Vegetables/Recipes5.html">
+                          <img src="img/Pinakbet Tagalog.png" alt="">
+                            <h2>Pinakbet Tagalog</h2>
+                            <h3 class="price">₱70.00</h3>
+                          </a>
+                            <button class="favorite-btn" id="favorite-btn">
+                                <i class='bx bx-heart' id="favorite-icon"></i> 
+                            </button>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <script src="Meals.script.js"></script>
+  </body>
+</html>
+
+
+    
+     

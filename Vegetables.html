@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv"X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlan: Vegetable Meals</title>
+    <!-- Link To CSS -->
+     <link rel="stylesheet" href="Vegetables.style.css">
+     <!-- Box Icons -->
+     <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Link Swiper's CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="img/title.png" alt="">
+        </div>
+        <!-- Menu Icon -->
+        
+        <!-- Nav List -->
+        <ul class="navbar">
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/home.html">Home</a></li>
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/home.html#categories">Categories</a></li>
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/home.html#about">About</a></li>
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/home.html#customers">Customers</a></li>
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/Meals/Meals.html" class="home-active">Meals</a></li>
+            <li><a href="file:///C:/Users/PRINCESS/OneDrive/signup.login/home/Meals/Price-List/Price-List.html">Price-List</a></li>
+        </ul>
+        <!-- Profile -->
+        <div class="profile">
+            <img src="img/profile.jpg" alt=""> 
+            <span>Abdus Rahman</span>
+            <i class='bx bx-caret-down' ></i>
+        </div>
+    </header>
+
+      <div id="sidebar" class="sidebar">
+          <h2>Grocery List</h2>
+          <button class='bx bx-printer' name='printer' id="print-btn" aria-label="Print"></button>
+          <button id="confirm-delivery-btn" class='bx bx-cart-alt' aria-label="Confirm Delivery"></button>
+          <div class="favorites">
+              <ul id="favorites-list"></ul>
+              <h3>Select Ingredients for Delivery</h3>
+              <ul id="delivery-list"></ul>  
+          </div>     
+      </div>
+      
+      <div id="main-content" class="main-content">
+          <button id="toggle-btn" class="toggle-btn" aria-label="Toggle Sidebar">
+              <img src="img/right-arrow.png" class="toggle-arrow" alt="Toggle Arrow">
+          </button>
+      </div>
+    
+      
+      <div class="budget-container">
+          <section class="container-search">
+              <input type="text" id="keyword" placeholder="Search Dishes..." />
+  
+              <div class="item">
+                  <label for="minBudget">Min Budget:</label>
+                  <input type="number" id="minBudget" min="0" value="0" />
+                  <span id="minBudgetValue">₱0</span>
+              </div>
+  
+              <div class="item">
+                  <label for="maxBudget">Max Budget:</label>
+                  <input type="number" id="maxBudget" min="0" value="100" />
+                  <span id="maxBudgetValue">₱100</span>
+              </div>
+              <button class="kkbutton" id="searchButton">Search</button>
+          </section>
+      </div>
+
+      <section>
+        <div id="results" class="products-container"></div>
+      </section>
+
+      <!-- Products -->
+      <section class="products" id="products">
+          <div class="heading"></div>
+          <div class="products-container">
+              
+              <!-- Box 1-->
+              <div class="box">
+                  <div class="dishes">
+                      <div class="dish" data-ingredients='["1 eggplant",
+                        "10 okra",
+                        "2 thumbs ginger",
+                        "1 tomato",
+                        "5 stalks green onions",
+                        "1 ½ cups spinach or alugbati",
+                        "1 ½ cup squash",
+                        "1 cup malunggay leaves",
+                        "2 long green pepper",
+                        "2 slices fish fillet (baked or fried)",
+                        "1 to 2 cups string beans",
+                        "1 cup loofah (patola)",
+                        "Salt",
+                        "2 cups water"]'>
+                          <a href="Recipes1/Recipes1.html">
+                              <img src="img/Utan Bisaya.png" alt="Chicharon Bulaklak">
+                              <h2>Utan Bisaya</h2>
+                              <h3 class="price">₱150.00</h3>
+                          </a>
+                          <button class="favorite-btn" id="favorite-btn">
+                              <i class='bx bx-heart' id="favorite-icon"></i> 
+                          </button>
+                      </div>
+                  </div>
+              </div>    
+          
+
+
+              <div class="box">
+                  <div class="dishes">
+                      <div class="dish" data-ingredients='["8 ounces kalabasa (Calabaza squash)",
+                        "1 carrots",
+                        "3/4 cup malunggay (moringa) leaves",
+                        "cooking oil",
+                        "cornstarch",
+                        "all-purpose flour",
+                        "4 grams Maggi Magic Sarap (or any seasoning)",
+                        "1 egg",
+                        "water",
+                        "½  onion(for dipping sauce)",
+                        "2  green onion(for dipping sauce)",
+                        "white vinegar (for dipping sauce)"]'>
+                        <a href="Recipes2/Recipes2.html">
+                          <img src="img/Vegetable Okoy.png" alt="">
+                          <h2>Vegetable Okoy</h2>
+                          <h3 class="price">₱77.00</h3>   
+                        </a>                     
+                          <button class="favorite-btn" id="favorite-btn">
+                              <i class='bx bx-heart' id="favorite-icon"></i> 
+                          </button>
+                      </div>
+                  </div>
+              </div>    
+
+
+
+              <!-- Box 3-->
+              <div class="box">
+                  <div class="dishes">
+                      <div class="dish" data-ingredients='["cabbage",
+                        "3/4 cup carrots",
+                        "3 cups bean sprouts",
+                        "2 green onions",
+                        "2 garlic",
+                        "1 ginger",
+                        "sesame oil",
+                        "soy sauce",
+                        "ground black pepper",
+                        "Spring roll wrappers",
+                        "1 egg",
+                        "cooking oil"]'>  
+                        <a href="Recipes3/Recipes3.html">
+                        <img src="img/Vegetable spring roll.png" alt="">
+                          <h2>Vegetable Spring roll</h2>
+                          <h3 class="price">₱90.00</h3>
+                        </a>
+                          <button class="favorite-btn" id="favorite-btn">
+                              <i class='bx bx-heart' id="favorite-icon"></i> 
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              
+
+              
+              <div class="box">
+                <div class="dishes">
+                    <div class="dish" data-ingredients='["1 1/2 lbs. squash",
+                        "18 string beans (sitaw)",
+                        "1 Knorr Pork ",
+                        "3 ounces pork (optional)",
+                        "coconut milk",
+                        "1  onion",
+                        "2 thumbs ginger",
+                        "5 cloves garlic",
+                        "ground black pepper",
+                        "cooking oil",
+                        "Fish sauce"]'>  
+                      <a href="Recipes4/Recipes4.html">
+                      <img src="img/Ginataang Kalabasa at sitaw.png" alt="">
+                        <h2>Ginataang Kalabasa at Sitaw</h2>
+                        <h3 class="price">₱50.00</h3>
+                      </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+                </div>
+              </div>
+
+
+
+              <div class="box">
+                <div class="dishes">
+                    <div class="dish" data-ingredients='["1 lb lechon kawali",
+                        "1 Knorr Shrimp",
+                        "12 sitaw",
+                        "1/2 kalabasa",
+                        "12 okra",
+                        "1 Chinese eggplant",
+                        "1 ampalaya",
+                        "1 kamote(optional)",
+                        "2 tomato",
+                        "2 thumbs ginger (optional)",
+                        "1 onion",
+                        "4 cloves garlic",
+                        "2 bagoong alamang",
+                        "water",
+                        "3 cooking oil",
+                        "ground black pepper"]'>  
+                      <a href="Recipes5/Recipes5.html">
+                      <img src="img/Pinakbet Tagalog.png" alt="">
+                        <h2>Pinakbet Tagalog</h2>
+                        <h3 class="price">₱70.00</h3>
+                      </a>
+                        <button class="favorite-btn" id="favorite-btn">
+                            <i class='bx bx-heart' id="favorite-icon"></i> 
+                        </button>
+                    </div>
+                </div>
+              </div> 
+
+            </div> 
+
+
+
+          </div>
+      </section>
+  
+      <script src="Vegetables.script.js"></script>
+  </body>
+  </html>
+  
+  
